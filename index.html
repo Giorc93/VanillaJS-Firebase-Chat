@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <title>Hello, world!</title>
+    <!--Adding firebase CDNs-->
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-firestore.js"></script>
+    <!--Adding public APIs-->
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyDRmpBxnGZcezymU8TfC1W64xZvj8ZiyD8",
+        authDomain: "vanillajs-firebase-chat.firebaseapp.com",
+        projectId: "vanillajs-firebase-chat",
+        storageBucket: "vanillajs-firebase-chat.appspot.com",
+        messagingSenderId: "1058009057637",
+        appId: "1:1058009057637:web:340c8855f7bffc87ec398c",
+      };
+      firebase.initializeApp(firebaseConfig);
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-dar bg-dark p-2 rounded-bottom">
+        <span class="navbar-brand text-primary" id="userName">Chat</span>
+        <div id="buttons"></div>
+      </nav>
+      <main id="privateContent"></main>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
