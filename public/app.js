@@ -113,3 +113,11 @@ const chatContent = (user) => {
       });
     });
 };
+
+//Deploy using firebase. Follow inst. from firebase doc
+
+//Remove auth domains localhost and 127.0.0.1
+
+//Web running on firebase. Everytime
+
+//Check security rules on docs
